@@ -248,13 +248,37 @@ console.log(c); // Error: c is not defined
 let age = 24;                    // Number
 let isStudent = true;            // Boolean
 let name = "vamshi"              // String
-let emptyValue = null;           // Null
+let emptyValue = null;           // null
 let uniqueId = symbol("id");     // Symbol
 let bigNumber = 89348903275380n; // BigInt
 let score;                       // Undefined
 ```
 
 ---
+
+```js
+let subjects = ["Math", "Science", "English"]; // Array
+let student = { name: "Vamshi", age=24 };      // Object
+
+function greet(){
+    console.log("Hello, " + student.name);
+}
+greet(); // Hello, Vamshi
+```
+
+
+**Checking Data Type**
+
+```js
+console.log(typeof name);       // "string"
+console.log(typeof age);        // "number"
+console.log(typeof isStudent);  // "boolean"
+console.log(typeof score);      // "undefined"
+console.log(typeof emptyValue); // "object" (JavaScript quirk!)
+console.log(typeof student);    // "object"
+console.log(typeof sujects);    // "object"
+console.log(typeof greet);      // "function"
+```
 
 
 
