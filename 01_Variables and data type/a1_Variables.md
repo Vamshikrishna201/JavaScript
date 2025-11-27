@@ -221,7 +221,7 @@ console.log(c); // Error: c is not defined
 
 ---
 
-## Data Type in javaScript 
+## 2. Data Type in javaScript 
 
 - JavaScipt has two of data:
     - Primitive
@@ -279,7 +279,4 @@ console.log(typeof student);    // "object"
 console.log(typeof sujects);    // "object"
 console.log(typeof greet);      // "function"
 ```
-
-
-
-
+---
