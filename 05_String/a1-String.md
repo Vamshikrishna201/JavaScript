@@ -218,12 +218,12 @@ TIP:- This will helpfull when your making something searching bar.
 
 ## 11. `startsWith()`
 
-`startWith()` -> method returns `true` if a Stringbegins with specified characters. if not it returns `false`.
+`startWith()` -> Checks if a string begins with the specified characters. It is case-sensitive.
 
 ```js
-const letter = "A";
-console.log(letter.startsWith("A")); // true
-console.log(letter.startsWith("a")); // true
+const greeting = "Hello World";
+console.log(greeting.startsWith("Hello")); // true
+console.log(greeting.startsWith("hello")); // false (H is not the same as h)
 ```
 
 
@@ -231,17 +231,42 @@ console.log(letter.startsWith("a")); // true
 
 ## 12. `include()`
 
-`include()` method checks if one String can be found inside another string.
+`include()` Checks if one string can be found inside another string.
 
 ```js
-const fruits = ["apple", "banana", "cherry"];
+const sentence = "The quick brown fox jumps.";
 
-// Check if "banana" is in the array
-const hasBanana = fruits.includes("banana");
-console.log(hasBanana); // Output: true
+// Check if "fox" is in the string
+const hasFox = sentence.includes("fox");
+console.log(hasFox); // Output: true
 
-// Check if "grape" is in the array
-const hasGrape = fruits.includes("grape");
-console.log(hasGrape); // Output: false
+// Check if "cat" is in the string
+const hasCat = sentence.includes("cat");
+console.log(hasCat); // Output: false
 ```
+
+---
+
+## 13. `endsWith()`
+
+`endsWith()` Checks if a string ends with the specified characters.
+
+```js
+const word = "Apple";
+
+console.log(word.endsWith("e"));   // Output: true
+console.log(word.endsWith("E"));   // Output: false (The string ends with 'e', not 'E')
+```
+
+---
+
+## 14. `repeat(n)`
+
+`repeat(n)` Returns a new string with the string repeated a specified number of times.
+
+```js
+const laughter = "Ha";
+console.log(laughter.repeat(3)); // Output: HaHaHa
+```
+
 ---
