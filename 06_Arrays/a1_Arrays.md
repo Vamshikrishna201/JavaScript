@@ -213,7 +213,7 @@ console.log(items);    // Original is unchanged: ["A", "B", "C", "D", "E"]
 let cars = ["BMW", "Audi", "Tata", "Mahindra"];
 cars.splice(2, 2); // index 2 se shuru karke 2 elements remove karo
 
-console.log(cars); // Output: ["BMW", "Audi"]
+console.log(cars); // Output: ["BMW", "Audi"] 
 ```
 
 **Example B: Replacing elements**
