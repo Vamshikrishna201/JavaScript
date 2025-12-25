@@ -28,6 +28,9 @@ Index 1: The color is green
 Index 2: The color is blue
 */
 ```
+`forEach()` is used to execute the same code on every element in an array but does not change the array and returns
+`undefined`.
+
 
 ---
 
@@ -49,6 +52,8 @@ console.log(roots); // Output: [1, 2, 3, 4]
 console.log(numbers); // Output: [1, 4, 9, 16] (Original array is unchanged)
 ```
 
+`.map()` executes the same code on every element in an array and returns a new array with the updated elements.
+
 ---
 
 ### 3. `filter()` (Select)
@@ -68,6 +73,9 @@ const adults = ages.filter((age) => age >= 18);
 console.log(adults); // Output: [18, 25, 30]
 console.log(ages); // Original array is unchanged
 ```
+
+`.filter()` checks every element in an array to see if it meets certain criteria and returns a new array with the elements that
+return truthy for the criteria.
 
 ---
 
@@ -95,6 +103,8 @@ const totalSum = items.reduce((sum, currentValue) => {
 
 console.log(totalSum); // Output: 17
 ```
+
+`.reduce()` iterates through an array and takes the values of the elements and returns a single value.
 
 **Reduce Step-by-Step**
 
