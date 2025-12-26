@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="ab">Id wala tag</h1>
+    <h1 class="ab">class wala tag</h1>
+    <h1>Without any class and id</h1>
+    <button>Click Hello World!</button>
+
+    <script>
+    // ((((selection))))
+
+    // getElementById("title"); 
+    //-> select's only id from element
+
+    // querySelector(".box"); 
+    //-> select's single element with tag name, id & class (BEST)
+
+    // querySelectorAll("li"); 
+    //-> selects all matching elements the selector and puts them into a static NodeList.
+
+    let i = document.querySelector("#ab"); //id
+    let c = document.querySelector(".ab"); //class
+    let tag = document.querySelector("h1"); //h1 tag
+    let btn = document.querySelector("button"); //button tag
+
+    // Modifying Elements:
+    btn.textContent = "hello";
+    document.querySelector("h1").textContent = "Like";
+        
+
+    </script>
+    
+</body>
+</html>
