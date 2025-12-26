@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Creating and Deleting Elements
+
+      //CREATE
+      let h1 = document.createElement("h1");
+      h1.textContent = "hey";
+      h1.style.color = "red";
+      h1.style.fontFamily = "Segoe UI";
+
+      let img = document.createElement("img");
+      img.src = "IMAGE URL FROM unsplash";
+      img.style.tabSize = "20px";
+      document.querySelector("body").appendChild(img);
+
+      //ADD
+      // kahaparrakhoge.appendChild XD
+      // append matlab jodo
+      // Child batlab bacha
+      document.querySelector("body").appendChild(h1);
+
+      //REMOVE
+      document.querySelector("body").removeChild(img);
+    </script>
+  </body>
+</html>
